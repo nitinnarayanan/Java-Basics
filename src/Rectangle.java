@@ -5,6 +5,10 @@ public class Rectangle {
     private int length;
     private int width;
 
+    public Rectangle(){
+        this.length = 5;
+        this.width = 5;
+    }
     public Rectangle(int length, int width){
         this.length = length;
         this.width = width;
@@ -29,6 +33,12 @@ public class Rectangle {
     }
     public static void main (String[] args){
         Rectangle obj = new Rectangle(87, 99);
-        System.out.println(obj.area());
+        System.out.println("Area in Custom method: "+obj.area());
+
+        Rectangle obj1 = new Rectangle();
+        System.out.println("(Default) Area before Setting values : "+obj1.area());
+        obj1.setLength(45);
+        obj1.setWidth(20);
+        System.out.println("Area after Setting values : "+obj1.area());
     }
 }
