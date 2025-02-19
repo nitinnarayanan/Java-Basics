@@ -34,9 +34,9 @@ public class BankAccount{
 
     }
     public void display(){
-        System.out.println("\n*****Account Summary*****");
-        System.out.println("Account Number: "+AcctNo);
-        System.out.println("Account type: "+ AcctType);
+        System.out.println("\n*****Banking.Account Summary*****");
+        System.out.println("Banking.Account Number: "+AcctNo);
+        System.out.println("Banking.Account type: "+ AcctType);
         System.out.println("Current Balance: "+ balance);
 
     }
